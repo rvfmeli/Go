@@ -1,0 +1,7 @@
+
+
+
+
+**** fazer conversao de string para int *****
+utilizando metodo strconv.Ito
+segue link para mais ** https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-go-pt **
