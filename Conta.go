@@ -15,7 +15,7 @@ type Conta struct {
 
 }
 
-var valorConta float64 = 0
+var valorConta float64 = 5000
 
 
 
@@ -34,6 +34,16 @@ func (c *Conta) Sacar (valorDoSaque float64) (string, float64, string, float64) 
 		return "Seu saldo agora é: ", c.saldo, "Valor do saque foi de: ", valorDoSaque
 	} else {
 		return "Valor insuficiente: ", c.saldo, "Valor na conta é: ", valorDoSaque
+	}
+}
+
+func (c *Conta) Trasnfere(valorT float64, contaDestino Conta) (string, bool) {
+	if valorT < valorConta && valorT > 0  {
+		valorConta =- valorT
+		contaDestino.Depositar(valorT)
+		return  "Sucesso", true
+	} else {
+		return "Sem Saldo", false
 	}
 }
 
@@ -59,5 +69,9 @@ func main ()  {
 	fmt.Println( "Titular: " + contaJully.titular + "\nSaldo: " + strconv.FormatFloat(float64(contaJully.saldo), 'f', 1,32))
 	saldoAtual, valor, status, valorDoSaque := contaJully.Sacar(300 )
 	fmt.Println(saldoAtual, valor, status, valorDoSaque)
+
+	fmt.Println( "Titular" + contaRafa.titular + "\nSaldo: " + strconv.FormatFloat(float64(contaJully.saldo), 'f', 1,32))
+	status, _ = contaRafa.Trasnfere(3000, contaJully)
+	fmt.Println(status)
 }
 
