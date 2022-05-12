@@ -8,3 +8,6 @@ segue link para mais ** https://www.digitalocean.com/community/tutorials/how-to-
 
 **** Para tonar um campo ou função pública ou privada para outras partes da aplicação,
 alteramos a primeira letra para minúscula ou maiúscula respectivamente. ***
+
+**** criamos um novo tipo interface onde podemos utilizar tanto a conta corrente como
+ poupança para pagar um boleto através da função Sacar. Interface é um Contrato onde se é definido um comportamento  comuns, os quais nos permitiram reutilizaro codigo.
