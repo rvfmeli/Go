@@ -1,19 +1,29 @@
 package contas
 
-import "golang/Go/cmd/core/repositories"
+import (
+	clientes "golang/Go/cmd/core/entities"
+	"golang/Go/cmd/core/repositories"
+)
 
-type sacarUseCase interface {
+type SacarUseCase interface {
 	Sacar(valor float64) string
 }
 
-type sacarUseCaseImpl struct {
+type SacarUseCaseImpl struct {
 	contaRepositories repositories.ContaRepositories
 }
 
-func (useCase *sacarUseCaseImpl) Sacar(valorDoSaque float64) string {
-	podeSacar := valorDoSaque > 0 && valorDoSaque <= c.saldo
+func (useCase *SacarUseCaseImpl) Sacar(valorDoSaque float64) string {
+
+	var saldo clientes.ContaCorrente
+
+	var saldoNaConta float64
+
+	saldo.Saldo = saldoNaConta
+
+	podeSacar := valorDoSaque > 0 && valorDoSaque <= saldoNaConta
 	if podeSacar {
-		ContaCorrente.ObterSaldo()
+		saldoNaConta -= valorDoSaque
 		return "Saque realizado com sucesso"
 	} else {
 		return "saldo insuficiente"

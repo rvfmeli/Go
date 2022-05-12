@@ -1,12 +1,22 @@
 package clientes
 
 type Titular struct {
-	Nome, CPF, Profissao string
+	Nome      string
+	cpf       string
+	profissao string
 }
 
 type ContaCorrente struct {
 	titular         Titular
-	numeroDaAgencia int64
-	numeroDaConta   int64
-	saldo           float64
+	NumeroDaAgencia int64
+	NumeroDaConta   int64
+	Saldo           float64
+}
+
+type ContaPoupanca struct {
+	Titular       Titular
+	NumeroAgencia int64
+	NumeroDaConta int64
+	operacao      int64
+	saldo         float64
 }

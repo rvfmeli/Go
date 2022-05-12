@@ -1,7 +1,5 @@
 package contas
 
-import "golang/Go/cmd/core/repositories"
+func PagarBoleto(conta verificarConta, valorDoBoleto float64) {
 
-func PagarBoleto(verificarConta repositories.ContaRepositories, valorDoBoleto float64) {
-	sacarUseCase()
 }

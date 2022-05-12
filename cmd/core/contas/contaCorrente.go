@@ -10,25 +10,25 @@ package contas
 //	}
 //}
 
-func (useCase *ContaCorrente) Depositar(valorDoDeposito float64) (string, float64) {
-	if valorDoDeposito > 0 {
-		saldo.
-		return "Deposito realizado com sucesso", c.saldo
-	} else {
-		return "Valor do deposito menor que zero", c.saldo
-	}
-}
-
-func (useCase *ContaCorrente) Tranferir(valorDaTransferencia float64, contaDestino *ContaCorrente) bool {
-	if valorDaTransferencia < c.saldo && valorDaTransferencia > 0 {
-		useCase.saldo -= valorDaTransferencia
-		contaDestino.Depositar(valorDaTransferencia)
-		return true
-	} else {
-		return false
-	}
-}
-
-func (useCase *ContaCorrente) ObterSaldo() float64 {
-	return useCase.saldo
-}
+//func (useCase *ContaCorrente) Depositar(valorDoDeposito float64) (string, float64) {
+//	if valorDoDeposito > 0 {
+//		saldo.
+//		return "Deposito realizado com sucesso", c.saldo
+//	} else {
+//		return "Valor do deposito menor que zero", c.saldo
+//	}
+//}
+//
+//func (useCase *ContaCorrente) Tranferir(valorDaTransferencia float64, contaDestino *ContaCorrente) bool {
+//	if valorDaTransferencia < c.saldo && valorDaTransferencia > 0 {
+//		useCase.saldo -= valorDaTransferencia
+//		contaDestino.Depositar(valorDaTransferencia)
+//		return true
+//	} else {
+//		return false
+//	}
+//}
+//
+//func (useCase *ContaCorrente) ObterSaldo() float64 {
+//	return useCase.saldo
+//}
