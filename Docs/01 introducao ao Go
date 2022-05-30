@@ -1,0 +1,12 @@
+Instalação do Go
+Go Workspace
+A pasta bin para os arquivos binários, compilados
+A pasta src para o código fonte
+A pasta pkg para os pacotes compartilhados entre as aplicações
+Instalação da extensão do Go no Visual Studio Code
+Com isso temos autocomplete, detecção de erros, etc
+Convenções da linguagem
+Implementação do Hello World
+Compilando e executando um programa em Go
+
+https://cursos.alura.com.br/course/golang/task/27854

@@ -13,7 +13,7 @@ package contas
 //func (useCase *ContaCorrente) Depositar(valorDoDeposito float64) (string, float64) {
 //	if valorDoDeposito > 0 {
 //		saldo.
-//		return "Deposito realizado com sucesso", c.saldo
+//		return "Deposito realizado com sucesso", c.salaasdo
 //	} else {
 //		return "Valor do deposito menor que zero", c.saldo
 //	}

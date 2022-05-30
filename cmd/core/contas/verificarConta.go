@@ -1,7 +1,6 @@
 package contas
 
 import (
-	"fmt"
 	"golang/Go/cmd/core/repositories"
 )
 
@@ -17,5 +16,4 @@ func (useCase *verificarContaUseCaseImpl) VerificarConta(saldo float64) {
 
 	useCase.contaRepositories.Saldo(saldo)
 
-	}
 }

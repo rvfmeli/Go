@@ -1,0 +1,19 @@
+Declaração de variáveis
+- Valor padrão das variáveis sem valor inicial
+var nome string = "Douglas"
+
+- Inferência de tipos de variáveis
+Para saber se o Go conseguir inferir corretamente o tipo das variáveis, podemos descobri-los, importando o pacote reflect e chamando
+ a sua função TypeOf, passando para ela a variável que queremos saber o tipo:.
+
+- Descobrir o tipo da variável, Através da função TypeOf, do pacote reflect
+
+- Declaração curta de variáveis
+idade := 24
+
+Ler dados digitados do usuário
+scan
+
+Através das funções Scanf e Scan, do pacote fmt
+Mais convenções do Go
+Variáveis e imports não utilizados são deletados
