@@ -25,13 +25,9 @@ func main() {
 	navigate.ExibeMenu()
 	comando := navigate.LerComando()
 
-	fmt.Scan(&comando)
-
-	fmt.Println("O valor da variável comando é:", comando)
-
 	switch comando {
 	case 1:
-		fmt.Println("Monitorando...")
+		navigate.IniciarMonitoramento()
 	case 2:
 		fmt.Println("Exibindo Logs...")
 	case 0:
