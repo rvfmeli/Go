@@ -21,19 +21,20 @@ func main() {
 	//
 	//fmt.Println(contaDaLuisa.ObterSaldo())
 
-	navigate.ExibeIntroducao()
-	navigate.ExibeMenu()
-	comando := navigate.LerComando()
+	for {
+		navigate.ExibeIntroducao()
+		navigate.ExibeMenu()
+		comando := navigate.LerComando()
 
-	switch comando {
-	case 1:
-		navigate.IniciarMonitoramento()
-	case 2:
-		fmt.Println("Exibindo Logs...")
-	case 0:
-		fmt.Println("Saindo do programa...")
-	default:
-		fmt.Println("Não conheço este comando")
+		switch comando {
+		case 1:
+			navigate.IniciarMonitoramento()
+		case 2:
+			fmt.Println("Exibindo Logs...")
+		case 0:
+			fmt.Println("Saindo do programa...")
+		default:
+			fmt.Println("Não conheço este comando")
+		}
 	}
-
 }
