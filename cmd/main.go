@@ -31,6 +31,8 @@ func main() {
 			navigate.IniciarMonitoramento()
 		case 2:
 			fmt.Println("Exibindo Logs...")
+		case 3:
+			navigate.ExibirNomes()
 		case 0:
 			fmt.Println("Saindo do programa...")
 		default:
